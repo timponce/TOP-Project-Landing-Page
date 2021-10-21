@@ -3,6 +3,11 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: "Segoe UI", "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    -moz-transform: scale(1);
+-webkit-transform: scale(1);
+transform: scale(1);
 }
 
 .intro {
@@ -21,12 +26,11 @@ ul {
     display: flex;
     gap: 32px;
     font-size: 18px;
-    color: #E5E7EB;
 }
 
 a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: #A1A5AC;
     font-size: 18px;
 }
 
@@ -43,13 +47,22 @@ a {
 .intro-content {
     display: flex;
     column-gap: 48px;
-    padding-bottom: 64px;
+    padding: 96px 0px;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 8px;
+    flex: 1 1 0;
+}
+
+.hero-right {
+    background-color: #9e9ea0;
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
 }
 
 .hero {
@@ -60,28 +73,23 @@ a {
 
 .hero-secondary {
     font-size: 18px;
-    color: #E5E7EB;
-}
-
-.hero-sign-up {
-    flex: 0 1 auto;
-    max-width: 128px;
+    color: #A1A5AC;
 }
 
 button {
     border-radius: 6px;
-    padding: 4px 12px;
+    padding: 6px 28px;
     border: none;
-    padding: 4px 24px;
 }
 
 .hero-sign-up {
+    font-weight: bold;
     background-color: #3882F6;
     color: #F9FAF8;
 }
 
 .hero-img {
-    background-color: #9e9ea0;
     color:#F9FAF8;
-    padding: 64px 128px;
+    text-align: center;
+    flex: 1 1 0;
 }
