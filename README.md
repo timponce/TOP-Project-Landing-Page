@@ -1,0 +1,1 @@
+After learning the foundations of Git, HTML, CSS, and Flexbox I am attempting to create a simple landing page from scratch. This is a part of The Odin Project Foundations series.
