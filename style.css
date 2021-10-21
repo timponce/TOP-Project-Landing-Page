@@ -1,13 +1,9 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     font-family: "Segoe UI", "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    -moz-transform: scale(1);
--webkit-transform: scale(1);
-transform: scale(1);
 }
 
 .intro {
@@ -79,17 +75,123 @@ a {
 button {
     border-radius: 6px;
     padding: 6px 28px;
-    border: none;
+    white-space: nowrap;
 }
 
 .hero-sign-up {
     font-weight: bold;
     background-color: #3882F6;
     color: #F9FAF8;
+    border: none;
 }
 
 .hero-img {
     color:#F9FAF8;
     text-align: center;
     flex: 1 1 0;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 15% 96px;
+}
+
+.info-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.info-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-img {
+    border: 3px solid #3882F6;
+    border-radius: 12px;
+    height: 150px;
+    width: 150px;
+}
+
+.card-text {
+    color: #707070;
+    text-align: center;
+    width: 150px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 96px 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote-author {
+    color: #1F2937;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.call-to-action {
+    background-color: #3882F6;
+    border-radius: 8px;
+    margin: 64px 10%;
+    padding: 32px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.cta-prompt {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-heading {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-text {
+    color: #d3d3d3;
+    font-size: 18px;
+}
+
+.cta-sign-up {
+    color: #E5E7EB;
+    font-weight: bold;
+    border-color: white;
+    border: 2px white solid;
+    background-color: transparent;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #A1A5AC;
+    text-align: center;
+    padding: 32px;
 }
